@@ -31,18 +31,22 @@ export class NavbarComponent {
     }
   }
 
-// MDN -> 
-// 
-//active link switcher
+//   let menuIcon = document.querySelector('#menu-icon');
+// let navbar = document.querySelector('nav');
 
+// menuIcon.onclick = () => {
+//     // لما تضغط يضيف كلاس active لو مش موجود، ويشيله لو موجود
+//     navbar.classList.toggle('active');
+    
+//     // اختياري: تغيير شكل الأيقونة لـ X عند الفتح (لو بتستخدم BoxIcons)
+//     menuIcon.classList.toggle('bx-x');
+// };
 
+isMenuActive: boolean = false;
 
-// const links = document.querySelectorAll('.nav-link');
-// links.forEach(link => {
-//     link.addEventListener('click', () => {
-//         links.forEach(l => l.classList.remove('active'));
-//         link.classList.add('active');
-//     });
-// });
+  // Function بتبدل الحالة لما نضغط على الأيقونة
+  toggleMenu(): void {
+    this.isMenuActive = !this.isMenuActive;
+  }
 
 }
