@@ -134,6 +134,10 @@ h1 span{
 
 
 @media screen and (max-width: 1200px) {
+    .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .cards{
         grid-template-columns: repeat(2, 1fr);
     }

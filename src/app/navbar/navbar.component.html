@@ -2,13 +2,13 @@
         <a routerLink="/home" class="logo1">RIP_2005</a>
         <div class="list">
             <nav [class.active]="isMenuActive">
-                <a routerLink="/home" routerLinkActive="active" class="nav-link1">Home</a>
-                <a routerLink="/services" routerLinkActive="active" class="nav-link1">Services & Skills</a>
-                <a routerLink="/experience" routerLinkActive="active" class="nav-link1">Education & Experience</a>
-                <a routerLink="/contact" routerLinkActive="active" class="nav-link1">Contact</a>
+                <a routerLink="/home" routerLinkActive="active" class="nav-link1" (click)="isMenuActive = false">Home</a>
+                <a routerLink="/services" routerLinkActive="active" class="nav-link1" (click)="isMenuActive = false">Services & Skills</a>
+                <a routerLink="/experience" routerLinkActive="active" class="nav-link1" (click)="isMenuActive = false">Education & Experience</a>
+                <a routerLink="/contact" routerLinkActive="active" class="nav-link1" (click)="isMenuActive = false">Contact</a>
             </nav>
             
-            <div id="menu-icon" (click)="toggleMenu()"><i class="fa-solid fa-bars-staggered"></i></div>
+            <div id="menu-icon" (click)="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
         </div>
         <button id="theme" class="btn1" (click)="toggleTheme()"><i [class]="isLightMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i></button>
     </header>

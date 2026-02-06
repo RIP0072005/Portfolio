@@ -185,7 +185,7 @@
     background: var(--second-color);
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1200px){
     .box-wrapper{
         width: 100%;
     }
@@ -205,18 +205,26 @@
         border-radius: 0 0 30px 30px;
     }
 
-    .form-group{
-        width: 100%;
-        float: none;
-        margin: 25px 0;
-    }
 
+
+    
+
+    .submit-button{
+        margin: 10px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 750px){
+    
     .form-fields .form-group:last-child,
     .submit-button{
         width: 100%;
     }
 
-    .submit-button{
-        margin: 10px 0px;
+    .form-group{
+        width: 100%;
+        float: none;
+        margin: 25px 0;
     }
 }

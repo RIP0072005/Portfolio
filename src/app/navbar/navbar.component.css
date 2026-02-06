@@ -70,7 +70,9 @@ nav a.active{
         top: 15px;
         right: -86%;
         width: fit-content;
-        display: block; 
+        display: block;
+        background: transparent; 
+        color: var(--main-color);
     }
 
     /* nav{

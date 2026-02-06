@@ -46,7 +46,7 @@ main.row{
 
 .card{
     display: inline-block;
-    height: 420px;
+    height: fit-content;
     padding: 20px;
     margin-bottom: 20px;
     background-color: var(--bg-color);
@@ -114,7 +114,6 @@ pre{
 @media screen and (max-width: 767px) {
     main.row{
         grid-template-columns: 1fr;
-
     }
 
     .row .col:nth-child(2){

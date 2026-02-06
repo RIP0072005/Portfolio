@@ -87,9 +87,10 @@ section{
 }
 
 .typing-text span::before{
+    text-wrap: no-wrap;
     content: "Software Developer";
     color: var(--main-color);
-    animation: words 20s infinite;
+    animation: words 15s infinite;
 }
 
 .typing-text span::after{

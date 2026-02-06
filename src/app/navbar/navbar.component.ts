@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   isLightMode : boolean = false;
+  isMenuActive: boolean = false;
   ngOnInit() {
     const currentTheme = localStorage.getItem('theme');
 
@@ -31,20 +32,9 @@ export class NavbarComponent {
     }
   }
 
-//   let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('nav');
 
-// menuIcon.onclick = () => {
-//     // لما تضغط يضيف كلاس active لو مش موجود، ويشيله لو موجود
-//     navbar.classList.toggle('active');
-    
-//     // اختياري: تغيير شكل الأيقونة لـ X عند الفتح (لو بتستخدم BoxIcons)
-//     menuIcon.classList.toggle('bx-x');
-// };
 
-isMenuActive: boolean = false;
 
-  // Function بتبدل الحالة لما نضغط على الأيقونة
   toggleMenu(): void {
     this.isMenuActive = !this.isMenuActive;
   }
